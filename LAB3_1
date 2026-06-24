@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define MAX 5
+int find_index (int atl [ ], int numf)
+{
+
+     int k;
+     for (k=0; k< MAX; k++)
+     {
+     if (atl [k] == numf)
+     return k;
+     }
+     return -5;
+     }
+     int main()
+    {
+     int arr[ ] = {36, 55, 45, 46, -9};
+	find_index(arr,50);
+	printf ("%d", find_index (arr,50));
+	return 0;
+     }
+
+
+
+
+
+
+
+
