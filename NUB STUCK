@@ -1,0 +1,38 @@
+#include <stdio.h>
+#define MAX 5
+int mystack[MAX];
+int top=-1;
+
+void pushmango (int numberbanana)
+{
+
+    if (numberbanana <100 || numberbanana >= 200)
+    {
+        printf("Error Number  is out of range: %d\n");
+        return;
+    }
+    if (top >= MAX - 1)
+    {
+        printf("Stack Overflow\n", numberbanana);
+        return -2;
+
+    }
+
+    top++;
+    mystack[top] = numberbanana;
+    printf("Successfully pushed:%d \n", numberbanana);
+}
+int main()
+{
+    pushmango(147);
+    pushmango(123);
+    pushmango(182);
+    pushmango(105);
+    pushmango(298);
+    pushmango(85);
+    pushmango(100);
+    pushmango(200);
+    return 0;
+
+}
+
