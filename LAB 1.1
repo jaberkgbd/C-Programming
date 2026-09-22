@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+double price = 1234.5678;
+int qty = 7;
+cout << "Quantity : " <<qty << '\n';
+cout << fixed << setprecision(2);
+cout << "price : "<< setw (10) << price <<'\n';
+cout << "   Enter a name and an age:";
+string name; int age;
+cin >> name >> age;
+cin.ignore();
+cout << "Hello " << name <<", age " << age << endl;
+return 0;
+}
+
+
